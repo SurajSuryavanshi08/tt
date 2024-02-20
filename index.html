@@ -106,6 +106,7 @@
       font-size: 14px;
       line-height: 1.5;
       color: #555;
+      
     }
     .second-division{
         flex-direction: column;
@@ -132,11 +133,14 @@
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;
+    padding-left:10%;
+    padding-right: 10%;
 }
 @media screen and (max-width: 445px) {
     .flex-container {
         flex-direction:column;
-        align-items: center;
+        padding-left:0%;
+    padding-right: 0%;
     }
     .logo{
         height: 45px;
@@ -148,6 +152,12 @@
     }
     .social-media-links{
         display: none;
+    }
+    
+    .second-division p{
+        text-align: left;
+        width: 100%;
+          
     }
     
 
@@ -172,7 +182,53 @@
     }
   }
   
-
+  @media (max-width: 450px) {
+    .vertical-list li {
+      margin-bottom: 2px;
+      display: inline-block;
+      font-size: 12px; /* Set the font size to 10px */
+      margin: 0;
+      
+    }
+    .first-division {
+      width: 60%;
+      display: flex;
+    }
+    .second-division {
+      width: 100%;
+      display: flex;
+    }
+    .container p-4{
+      display: flex;
+      flex-direction: row;
+    }
+  
+  }
+  @media (max-width: 450px) {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; /* or any other preferred alignment */
+    }
+    .col-lg-2{
+      
+    } 
+  }
+  @media (max-width: 450px) {
+    .row.justify-content-center .col-lg-2 {
+      flex: 0 0 100%; /* Make the columns take full width */
+      max-width: 100%;
+      margin-bottom: 1rem; /* Add margin-bottom of 1 */
+    }
+  
+    .row.justify-content-center .col-md-6 {
+      flex: 0 0 50%; /* Make the columns take 50% width */
+      max-width: 50%;
+    }
+  }
+  
+  
+  
 
 
       
@@ -230,7 +286,7 @@
                 <!-- Button with an image -->
                 <button type="button" style="border: none;">
                   <a href="17704.png">
-                    <img src="dots.png" style="height: 24px; width: 24px; border: none;" alt="Button Image">
+                    <img src="dice.png" style="height: 30px; width: 24px; border: none; background-color: transparent;" alt="Button Image">
                   </a>
                 </button>
                 
@@ -243,112 +299,65 @@
         <!-- Grid container -->
         <div class="container p-4" style="background-color: transparent;">
             <!--Grid row-->
-            <div class="row" style="font-size: small;">
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Resources</h5>
+            <div class="row justify-content-center" style="font-size: small;">
+
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5 class="text-uppercase">Resources</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                      <li><a href="#!" class="text-body">Trading View</a></li>
+                      <li><a href="#!" class="text-body">NSE Holidays</a></li>
+                      <li><a href="#!" class="text-body">NSE Holidays</a></li>
+                      <li><a href="#!" class="text-body">e-Voting CDSL</a></li>
+                      <li><a href="#!" class="text-body">e-Voting NSDL</a></li>
+                      <li><a href="#!" class="text-body">Market Timings</a></li>
+                  </ul>
+              </div>
+          
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5 class="text-uppercase mb-0">Company</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                      <li><a href="#!" class="text-body">Careers</a></li>
+                      <li><a href="#!" class="text-body">Contact Us</a></li>
+                      <li><a href="#!" class="text-body">About Us</a></li>
+                      <li><a href="#!" class="text-body">Community</a></li>
+                      <li><a href="#!" class="text-body">Blogs</a></li>
+                  </ul>
+              </div>
+          
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5 class="text-uppercase">Offerings</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                      <li><a href="#!" class="text-body">Compare Broker</a></li>
+                      <li><a href="#!" class="text-body">Fin Calculators</a></li>
+                      <li><a href="#!" class="text-body">IPO</a></li>
+                      <li><a href="#!" class="text-body">All Brokers</a></li>
+                      <li><a href="#!" class="text-body">Products</a></li>
+                  </ul>
+              </div>
+          
+              <div class="col-lg-2 col-md-6 mb-4">
+                  <h5 class="text-uppercase mb-0">Links</h5>
+          
+                  <ul class="list-unstyled mb-0">
+                      <li><a href="#!" class="text-body">Shark Investor</a></li>
+                      <li><a href="#!" class="text-body">Mutual Funds</a></li>
+                      <li><a href="#!" class="text-body">Sitemap</a></li>
+                      <li><a href="#!" class="text-body">Indian Indices</a></li>
+                      <li><a href="#!" class="text-body">Bug Bounty Program</a></li>
+                  </ul>
+              </div>
+          
+          </div>
                    
-                    <ul class="list-unstyled mb-0" >
-                        <li>
-                            <a href="#!" class="text-body">Trading View</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">NSE Holidays</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">NSE Holidays</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">e-Voting CDSL</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">e-Voting NSDL</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Market Timings</a>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-    
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-0">Company</h5>
-    
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-body">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Contact Us</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Abouut US</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Community</a>
-                        </li>
-                        <li>
-                          <a href="#!" class="text-body">Blogs</a>
-                      </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-    
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase">Offerings</h5>
-    
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-body">Compare Broker</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Fin Calculators</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">IPO</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">All Brokers</a>
-                        </li>
-                        <li>
-                          <a href="#!" class="text-body">Products</a>
-                      </li>
-                    </ul>
-                </div>
-    
-                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                    <h5 class="text-uppercase mb-0">Links</h5>
-    
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-body">Shark Investor</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Mutual Funds</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Sitemap</a>
-                        </li>
-                        <li>
-                            <a href="#!" class="text-body">Indian Indices</a>
-                        </li>
-                        <li>
-                          <a href="#!" class="text-body">Bug Bounty Program</a>
-                      </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-            </div>
-            <!--Grid row-->
-        </div>
     
         <!-- Copyright -->
     </footer>
     
     <footer>
-        <div class="flex-container" style="">
+        <div class="flex-container">
     
             <div class="first-division" style="background-color: transparent;">
                 <div class="social-media-links">
@@ -360,11 +369,11 @@
                 </div>
                 <img class="logo" src="logo.png" alt="Footer Image" style="width: 100%;">
                 <ul class="vertical-list">
-                    <li><h6>Bluestock Fintech</h6></li>
-                    <li><h6>Pune Maharashtra</h6></li>
+                    <li>Bluestock Fintech</li>
+                    <li>Pune Maharashtra</li>
                     <br>
-                    <li><h6>MSME Registration No:</h6></li>
-                    <li><h6>UDYAM-MH-01-v0138001</h6></li>
+                    <li>MSME Registration No:</li>
+                    <li>UDYAM-MH-01-v0138001</li>
                 </ul>
     
                 <img class="flo" src="Footer.png" alt="Footer Image" style="width: 100%;">
